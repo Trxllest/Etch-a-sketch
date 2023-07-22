@@ -17,6 +17,7 @@ body {
     width: 500px;
     height: 500px;
     padding: 0;
+    flex: 0 0 auto;
 }
 
 .row {
