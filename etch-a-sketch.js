@@ -18,4 +18,14 @@ function createGrid(size = 16) {
     }
 }
 
-createGrid(16);
+createGrid(64);
+
+// Change square color on hover
+function colorSquare() {
+    const squares = document.querySelectorAll('.square');
+    for (let square of squares) {
+        square.addEventListener('mouseover', () => square.style.backgroundColor = 'red')
+    }
+}
+
+colorSquare();
