@@ -30,3 +30,20 @@ body {
     border: 1px solid black;
     flex: 1 1 0;
 }
+
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-self: center;
+}
+
+.range {
+    margin-bottom: 20px;
+}
+
+
+
+button {
+    margin-bottom: 8px;
+}

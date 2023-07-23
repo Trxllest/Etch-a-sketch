@@ -1,6 +1,9 @@
 let squareSize = 8;
-let gridSize = document.querySelector('input');
+let chosenColor = 'black'
+let gridSize = document.querySelector('.sizeSelect');
+let colorChoice = document.querySelector('.colorChoice');
 const applyInput = document.querySelector('.apply');
+let clear = document.querySelector('.clear');
 
 
 // Create grid fxn
@@ -8,20 +11,28 @@ createGrid(squareSize);
 
 // Select Size 
 gridSize.addEventListener('input', function(e) {
-    console.log(e.target.value);
     squareSize = e.target.value;
-})
+});
 
 // Apply selected size
 applyInput.addEventListener('click', function() {
     resetGrid();
 });
 
+// Select color
+colorChoice.addEventListener('input', function(e) {
+    chosenColor = e.target.value;
+});
+
+
+// Clear Button;
+clear.addEventListener('click', resetGrid);
+
 // Change square color on hover
 function addSquareEventListeners () {
     let squares = document.querySelectorAll('.square');
     for (let square of squares) {
-        square.addEventListener('mouseover', (e) => e.target.style.backgroundColor = 'red');
+        square.addEventListener('mouseover', (e) => e.target.style.backgroundColor = chosenColor);
     }
 
 }
@@ -48,13 +59,10 @@ function createGrid(size = 8) {
 
 // Reset Grid
 function resetGrid() {
-    let rows = document.querySelectorAll('.row').length
-    const grid = document.querySelector('#grid');
-    for (let r = rows; r > 0; r--) {
-        grid.removeChild(grid.lastChild);
-    }
+    grid.textContent = '';
     createGrid(squareSize);
 }
+
 
 
 
