@@ -1,5 +1,5 @@
 let squareSize = 8;
-let chosenColor = 'black'
+let chosenColor = '#0D1282'
 let gridSize = document.querySelector('.sizeSelect');
 let colorChoice = document.querySelector('.colorChoice');
 const applyInput = document.querySelector('.apply');

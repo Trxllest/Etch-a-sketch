@@ -1,23 +1,36 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     border: 0;
     margin: 0;
+    background-image: linear-gradient(75deg, rgb(240, 222, 54), rgb(215, 19, 19));
+    background-repeat: repeat-y;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    color: black;
+    padding: 120px;
+}
+
+.main{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 100px;
 }
 
 #grid {
     display: flex;
     flex-direction: column;
-    border: 3px solid green;
+    border: 3px solid #EEEDED;
     width: 500px;
     height: 500px;
     padding: 0;
     flex: 0 0 auto;
+    background-color: snow;
 }
 
 .row {
@@ -27,7 +40,7 @@ body {
 }
 
 .square {
-    border: 1px solid black;
+    border: .5px dotted rgb(0, 0, 0, 0.2);
     flex: 1 1 0;
 }
 
@@ -36,13 +49,20 @@ body {
     flex-direction: column;
     padding: 12px;
     align-self: center;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #EEEDED;
+    margin-right: 50px;
+    background-color: rgb(13, 18, 130);
 }
 
 .range {
     margin-bottom: 20px;
 }
 
-
+.colorChoice {
+    background-image: linear-gradient(black, grey);
+}
 
 button {
     margin-bottom: 8px;

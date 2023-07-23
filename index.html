@@ -8,14 +8,17 @@
 </head>
 <body>
     
-    <div class="controls-container">
-        <input class='colorChoice' type="color">
-        <input class='sizeSelect' type="range" max="64" min="1" value="8">
-        <button class="apply">Apply</button>
-        <button class="clear">Clear</button>
-    </div>
+    <h1>Etch-A-Sketch</h1>
     
-    <div id="grid"></div>
+    <div class="main">
+        <div class="controls-container">
+            <input class='colorChoice' type="color" value="#0D1282">
+            <input class='sizeSelect' type="range" max="64" min="1" value="8">
+            <button class="apply">Apply</button>
+            <button class="clear">Clear</button>
+        </div>
+        <div id="grid"></div>
+    </div>
 
     <script src="etch-a-sketch.js"></script>
 </body>
