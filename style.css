@@ -5,7 +5,7 @@
 body {
     border: 0;
     margin: 0;
-    background-image: linear-gradient(75deg, rgb(240, 222, 54), rgb(215, 19, 19));
+    background-color: rgb(215, 19, 19, 0.75);
     background-repeat: repeat-y;
     background-size: contain;
     display: flex;
@@ -13,13 +13,13 @@ body {
     align-items: center;
     overflow-y: hidden;
     color: black;
-    padding: 120px;
 }
 
 .main{
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 #grid {
@@ -53,7 +53,7 @@ body {
     align-items: center;
     border: 3px solid #EEEDED;
     margin-right: 50px;
-    background-color: rgb(13, 18, 130);
+    background-color: rgb(13, 66, 130);
 }
 
 .range {
@@ -61,7 +61,7 @@ body {
 }
 
 .colorChoice {
-    background-image: linear-gradient(black, grey);
+    background-image: linear-gradient(#F0DE36 , grey);
 }
 
 button {
@@ -73,4 +73,9 @@ h1 {
     font-style: italic;
     font-weight: 900;
     text-shadow: #EEEDED 1.5px 1.5px;
+}
+
+h3 {
+    color: #EEEDED;
+    text-shadow: black 1.5px 1.5px;
 }

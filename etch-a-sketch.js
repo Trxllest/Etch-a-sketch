@@ -4,6 +4,7 @@ let gridSize = document.querySelector('.sizeSelect');
 let colorChoice = document.querySelector('.colorChoice');
 const applyInput = document.querySelector('.apply');
 let clear = document.querySelector('.clear');
+let inputSize = document.querySelector('h3');
 
 
 // Create grid fxn
@@ -12,6 +13,7 @@ createGrid(squareSize);
 // Select Size 
 gridSize.addEventListener('input', function(e) {
     squareSize = e.target.value;
+    inputSize.textContent = `${squareSize} x ${squareSize}`;
 });
 
 // Apply selected size
@@ -62,8 +64,6 @@ function resetGrid() {
     grid.textContent = '';
     createGrid(squareSize);
 }
-
-
 
 
 
