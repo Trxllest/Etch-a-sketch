@@ -34,7 +34,7 @@ clear.addEventListener('click', resetGrid);
 function addSquareEventListeners () {
     let squares = document.querySelectorAll('.square');
     for (let square of squares) {
-        square.addEventListener('click', (e) => e.target.style.backgroundColor = chosenColor);
+        square.addEventListener('mouseenter', (e) => e.target.style.backgroundColor = chosenColor);
     }
 
 }
